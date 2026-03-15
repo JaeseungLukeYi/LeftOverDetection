@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Waste Detection</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">School Cafeteria AI</p>
+        <h1>Food Waste Detection Console</h1>
+        <p class="subtitle">
+          Upload tray images named like <code>May-7-2026_3.jpg</code>. The system matches that date with
+          <code>menu.csv</code>, detects leftovers using OpenAI VLM, and generates an LLM report.
+          Optional reference image format: <code>May-7-2026_reference.jpg</code>.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Batch Upload</h2>
+        <form id="upload-form">
+          <label class="dropzone" for="files">
+            <input id="files" name="files" type="file" accept="image/*" multiple required />
+            <span>Drop images here or click to select files</span>
+          </label>
+          <button id="submit-btn" type="submit">Analyze Trays</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Results</h2>
+        <div id="status" class="status">Waiting for upload...</div>
+        <div id="results"></div>
+      </section>
+
+      <section class="panel">
+        <h2>AI Report</h2>
+        <div id="report-range" class="report-range"></div>
+        <div id="report"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
