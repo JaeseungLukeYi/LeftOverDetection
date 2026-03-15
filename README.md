@@ -8,6 +8,10 @@
 
 # 1. Overview
 
+[Google Slide](https://docs.google.com/presentation/d/1Cyue8qAgf-txRJ0jnAslaNyhK6n9DGyzxjsZqhMV6pw/edit?usp=sharing)
+
+![demo](./image/demo.png)
+
 School cafeterias often experience significant food waste because students leave certain foods uneaten. Identifying which foods are commonly wasted can help improve menu planning and reduce waste.
 
 This project proposes an **AI-powered food waste analysis system** that uses computer vision and language models to analyze student trays after meals.
